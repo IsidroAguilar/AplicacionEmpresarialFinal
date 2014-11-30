@@ -51,8 +51,8 @@ namespace HotelService.Controllers
                 {
                     //El nombre del usuario sera el numero de la habitacion
                     GivenName = roomNumber.ToString(),
-                    Surname = "",
-                    SamAccountName = "",
+                    //Surname = "",
+                    //SamAccountName = "",
                     VoiceTelephoneNumber = roomPhone,
                     Description = roomStatus,
                     Enabled = true
