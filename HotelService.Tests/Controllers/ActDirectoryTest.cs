@@ -18,7 +18,7 @@ namespace HotelService.Tests.Controllers
         {
             ActDirectoryController directoryMethods = new ActDirectoryController();
 
-            var success = directoryMethods.AddRoom(20, "Test123", "56-09-54", "Enabled");
+            var success = directoryMethods.AddRoom(20, "Admin1234", "56-09-54", "Enabled");
 
             Assert.IsTrue(success);
         }

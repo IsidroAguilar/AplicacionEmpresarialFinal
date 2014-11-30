@@ -19,7 +19,7 @@ namespace HotelService.Controllers
             "DC=Xavier,DC=Server",
             ContextOptions.Negotiate,
             "jahumada@Xavier.Server",//"jahumada@Xavier.Server",
-            "Javi123"
+            "Javier123"
             );
 
         #endregion
