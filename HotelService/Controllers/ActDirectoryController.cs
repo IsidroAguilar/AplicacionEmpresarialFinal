@@ -15,13 +15,13 @@ namespace HotelService.Controllers
         #region Context
 
         PrincipalContext ctx = new PrincipalContext(
-    ContextType.Domain,
-    "bonafide.local",
-    "DC=bonafide,DC=local",
-    ContextOptions.Negotiate,
-    "emuñoz@bonafide.local",
-    "Admin123456"
-    );
+        ContextType.Domain,
+        "bonafide.local",
+        "DC=bonafide,DC=local",
+        ContextOptions.Negotiate,
+        "emuñoz@bonafide.local",
+        "Admin123456"
+        );
 
         #endregion
 
@@ -39,7 +39,7 @@ namespace HotelService.Controllers
 
 
         public bool AddRoom(int roomNumber, string adminPass, string roomPhone, string roomStatus)
-        { 
+        {
             try
             {
                 //Se verifica que no exista una habitacion registrada con el mismo numero de habitacion
@@ -54,7 +54,6 @@ namespace HotelService.Controllers
                     GivenName = roomNumber.ToString(),
                     SamAccountName = roomNumber.ToString(CultureInfo.InvariantCulture),
                     //Surname = "",
-                    //SamAccountName = "",
                     VoiceTelephoneNumber = roomPhone,
                     Description = roomStatus,
                     Enabled = true
