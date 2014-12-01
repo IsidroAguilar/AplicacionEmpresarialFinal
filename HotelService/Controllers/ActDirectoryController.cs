@@ -25,7 +25,9 @@ namespace HotelService.Controllers
 
         #endregion
 
-        //All the General Methods
+
+
+        //General Methods
         #region General Methods
         public bool ValidateCredentials(string username, string password)
         {
@@ -94,7 +96,7 @@ namespace HotelService.Controllers
         }
 
         public bool SignInTenant(int roomNumber, string adminPass, string tenantName, string tenantSurname, string tenantAccess,
-             string tenantEmail)
+             string tenantEmail, string tenantPassword)
         {
             try
             {
@@ -108,6 +110,7 @@ namespace HotelService.Controllers
                 room.Surname = tenantName + tenantSurname;
                 room.SamAccountName = tenantAccess;
                 room.Enabled = true;
+                room.SetPassword(tenantPassword);
                 room.Save();
                 return true;
             }
@@ -127,9 +130,10 @@ namespace HotelService.Controllers
 
                 var room = UserPrincipal.FindByIdentity(ctx, roomNumber.ToString());
                 room.Description = "Enabled";
-                room.EmailAddress = "";
-                room.Surname = "";
-                room.SamAccountName = "";
+                room.EmailAddress = "Empty";
+                room.Surname = "Empty";
+                room.SamAccountName = "Empty";
+                room.SetPassword("Empty");
                 room.Enabled = true;
                 room.Save();
                 return true;
