@@ -112,6 +112,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CuentaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -119,26 +120,44 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrapValidator.css" />
+    <Content Include="Content\css\bootstrapValidator.min.css" />
+    <Content Include="Content\css\font-aweasome.min.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\Login.css" />
+    <Content Include="Content\css\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Scripts\Cuenta\encripcion.js" />
+    <Content Include="Scripts\Cuenta\Index.js" />
+    <Content Include="Scripts\Shared\bootbox.js" />
+    <Content Include="Scripts\Shared\bootstrap-filestyle.min.js" />
+    <Content Include="Scripts\Shared\bootstrap.js" />
+    <Content Include="Scripts\Shared\bootstrap.min.js" />
+    <Content Include="Scripts\Shared\bootstrapValidator.es_ES.js" />
+    <Content Include="Scripts\Shared\bootstrapValidator.js" />
+    <Content Include="Scripts\Shared\bootstrapValidator.min.js" />
+    <None Include="Scripts\Shared\jquery-2.1.1-vsdoc.js" />
+    <Content Include="Scripts\Shared\jquery-2.1.1.js" />
+    <Content Include="Scripts\Shared\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\Shared\jquery-ui-1.11.1.js" />
+    <Content Include="Scripts\Shared\jquery-ui.min-1.11.1.js" />
+    <Content Include="Scripts\Shared\jquery.fileupload.js" />
+    <Content Include="Scripts\Shared\jquery.ui.widget.js" />
+    <Content Include="Scripts\Shared\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\Shared\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\Shared\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Shared\jquery.validate.js" />
+    <Content Include="Scripts\Shared\jquery.validate.min.js" />
+    <Content Include="Scripts\Shared\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Shared\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Shared\kendo.modernizr.custom.js" />
+    <Content Include="Scripts\Shared\kendoGridFilter.js" />
+    <Content Include="Scripts\Shared\knockout-3.2.0.debug.js" />
+    <Content Include="Scripts\Shared\knockout-3.2.0.js" />
+    <Content Include="Scripts\Shared\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -153,10 +172,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Cuenta\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\fonts\" />
+    <Folder Include="Content\img\" />
+    <Folder Include="Content\themes\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -165,6 +187,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+    <Content Include="Scripts\Shared\jquery-2.1.1.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

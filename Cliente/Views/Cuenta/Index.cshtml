@@ -1,0 +1,78 @@
+﻿<!--
+Autor: Isidro Aguilar
+Fecha: 02/09/2014
+Descripción: Vista Index del controlador Cuenta donde se ingresa al sistema.
+-->
+
+@{
+    Layout = null;
+    ViewBag.Title = "EXAMEN | Login";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <!-- Fuentes css. -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Estilos. -->
+    <link href="~/Content/css/Login.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrapValidator.css" rel="stylesheet" />
+    <!-- Kendo css. -->
+    <link href="https://da7xgjtj801h2.cloudfront.net/2014.1.416/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://da7xgjtj801h2.cloudfront.net/2014.1.416/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://da7xgjtj801h2.cloudfront.net/2014.1.416/styles/kendo.default.min.css" rel="stylesheet" type="text/css" id="HojaUno" />
+    <link href="https://da7xgjtj801h2.cloudfront.net/2014.1.416/styles/kendo.dataviz.default.min.css" rel="stylesheet" type="text/css" id="HojaDos" />
+    <!-- FIN Estilos. -->
+    <!-- Scripts. -->
+    <!-- Kendo js.-->
+    <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/jquery.min.js"></script>
+    <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/kendo.all.min.js"></script>
+    <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/kendo.aspnetmvc.min.js"></script>
+    <script src="https://da7xgjtj801h2.cloudfront.net/2014.1.416/js/cultures/kendo.culture.es-ES.min.js"></script>
+    <script src="~/Scripts/kendo.modernizr.custom.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/Shared/bootstrapValidator.js"></script>
+    <script src="~/Scripts/Shared/bootstrapValidator.es_ES.js"></script>
+    <script src="~/Scripts/Shared/bootbox.js"></script>
+    <script src="~/Scripts/Cuenta/encripcion.js" type="text/javascript"></script>
+    <!-- FIN Scripts. -->
+</head>
+<body>
+    <!-- Logo -->
+    <div>
+        <img id="logo" src="~/Content/Img/general/micon.png" class="img-responsive" alt="logo">
+    </div>
+
+    <!-- Login -->
+    <div class="container">
+        <div class="form-signin" role="form">
+            <form id="formLogin">
+                <h2 class="form-signin-heading">Iniciar Sesión</h2>
+                <div class="form-group">
+                    <input name="Usuario" class="form-control" type="text" placeholder="Usuario" />
+                </div>
+                <br />
+                <div class="form-group">
+                    <input id="Contrasena" name="Contrasena" class="form-control" type="password" placeholder="Contraseña" />
+                </div>
+                <br />
+                <button class="btn btn-lg btn-block" type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <!-- FIN de Login -->
+    <!-- Datos de rutas. -->
+    <div id="Ingresar" data-url="@Url.Action("Ingresar","Cuenta")"></div>
+
+    <!-- Scripts. -->
+    <script src="~/Scripts/Cuenta/index.js"></script>
+</body>
+</html>
+

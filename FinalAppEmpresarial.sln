@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Administracion", "Administracion\Administracion.csproj", "{6C97232C-E1E4-41A8-A4F0-E64E97D3F1A8}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelService", "HotelService\HotelService.csproj", "{3AE820F0-231F-4DEA-B2B6-62D13C96340A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelService.Tests", "HotelService.Tests\HotelService.Tests.csproj", "{296D5AAF-1915-4F95-9D92-06B602916B7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaModelo", "LibreriaModelo\LibreriaModelo.csproj", "{468C5FAC-D1B9-4263-ABA5-34279F1BC59F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{296D5AAF-1915-4F95-9D92-06B602916B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{296D5AAF-1915-4F95-9D92-06B602916B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{296D5AAF-1915-4F95-9D92-06B602916B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468C5FAC-D1B9-4263-ABA5-34279F1BC59F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468C5FAC-D1B9-4263-ABA5-34279F1BC59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468C5FAC-D1B9-4263-ABA5-34279F1BC59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468C5FAC-D1B9-4263-ABA5-34279F1BC59F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

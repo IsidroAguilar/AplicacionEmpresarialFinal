@@ -12,3 +12,4 @@ C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\A
 C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.csproj.GenerateResource.Cache
 C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.exe
 C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.pdb
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\bin\Debug\Administracion.exe.config

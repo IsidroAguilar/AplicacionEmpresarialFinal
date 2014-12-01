@@ -1,0 +1,169 @@
+﻿/* Estilo Layout */
+html {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#page-wrapper {
+    padding: 0 15px;
+    min-height: 568px;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 0px;
+        padding: 0 30px;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+#footer {
+    height: 20px;
+    min-height: 20px;
+}
+
+.navbar-top-links li {
+    display: inline-block !important;
+}
+
+    .navbar-top-links li:last-child {
+        margin-right: 15px;
+    }
+
+    .navbar-top-links li a {
+        padding: 15px;
+        min-height: 50px;
+    }
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+    .navbar-top-links .dropdown-menu li:last-child {
+        margin-right: 0;
+    }
+
+    .navbar-top-links .dropdown-menu li a {
+        padding: 3px 20px;
+        min-height: 0;
+    }
+
+        .navbar-top-links .dropdown-menu li a div {
+            white-space: normal;
+        }
+
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks,
+.navbar-top-links .dropdown-alerts {
+    width: 310px;
+    min-width: 0;
+}
+
+.navbar-top-links .dropdown-messages {
+    margin-left: 5px;
+}
+
+.navbar-top-links .dropdown-tasks {
+    margin-left: -59px;
+}
+
+.navbar-top-links .dropdown-alerts {
+    margin-left: -123px;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+
+@media(min-width:768px) {
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+}
+
+#logo {
+    height: 70%;
+}
+
+/* General. */
+.form-group {
+    text-align: center;
+}
+
+.fileupload {
+    display: none !important;
+}
+
+.img-small {
+    height: 122px !important;
+}
+
+.center {
+    display: block !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.huge {
+    font-size: 40px;
+}
+
+.titulo-indicador {
+    font-size: 20px;
+}
+
+.footer-indicador {
+    font-size: 15px;
+}
+
+.space {
+    margin: 10px;
+}
+
+.space-left {
+    margin-left: 10px;
+}
+
+.space-right {
+    margin-right: 10px;
+}
+
+.space-top {
+    margin-top: 10px;
+}
+
+.space-botton {
+    margin-bottom: 10px;
+}
+
+.space-min {
+    margin: 5px;
+}
+
+.space-min-left {
+    margin-left: 5px;
+}
+
+.space-min-right {
+    margin-right: 5px;
+}
+
+.space-min-top {
+    margin-top: 5px;
+}
+
+.space-min-botton {
+    margin-bottom: 5px;
+}
