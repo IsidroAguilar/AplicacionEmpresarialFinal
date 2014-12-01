@@ -1,2 +1,14 @@
 C:\Users\Isidro Aguilar\Documents\Visual Studio 2013\Projects\FinalAppEmpresarial\Administracion\bin\Debug\Administracion.exe.config
 C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\Administracion\bin\Debug\Administracion.exe.config
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\bin\Debug\Administracion.exe.config
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\bin\Debug\Administracion.exe
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\bin\Debug\Administracion.pdb
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\MainWindow.baml
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\MainWindow.g.cs
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\App.g.cs
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion_MarkupCompile.cache
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.g.resources
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.Properties.Resources.resources
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.csproj.GenerateResource.Cache
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.exe
+C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.pdb

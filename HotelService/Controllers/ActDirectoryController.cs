@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.DirectoryServices.AccountManagement;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -14,13 +15,13 @@ namespace HotelService.Controllers
         #region Context
 
         PrincipalContext ctx = new PrincipalContext(
-            ContextType.Domain, //Name parameters
-            "Xavier.Server",
-            "DC=Xavier,DC=Server",
-            ContextOptions.Negotiate,
-            "jahumada@Xavier.Server",//"jahumada@Xavier.Server",
-            "Javier123"
-            );
+    ContextType.Domain,
+    "bonafide.local",
+    "DC=bonafide,DC=local",
+    ContextOptions.Negotiate,
+    "emuñoz@bonafide.local",
+    "Admin123456"
+    );
 
         #endregion
 
@@ -51,6 +52,7 @@ namespace HotelService.Controllers
                 {
                     //El nombre del usuario sera el numero de la habitacion
                     GivenName = roomNumber.ToString(),
+                    SamAccountName = roomNumber.ToString(CultureInfo.InvariantCulture),
                     //Surname = "",
                     //SamAccountName = "",
                     VoiceTelephoneNumber = roomPhone,
