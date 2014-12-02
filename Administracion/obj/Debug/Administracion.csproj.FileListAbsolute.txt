@@ -13,3 +13,15 @@ C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\A
 C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.exe
 C:\Users\emuñoz\Documents\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.pdb
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\bin\Debug\Administracion.exe.config
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\bin\Debug\Administracion.exe
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\bin\Debug\Administracion.pdb
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.csprojResolveAssemblyReference.cache
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\obj\Debug\MainWindow.baml
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\obj\Debug\MainWindow.g.cs
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\obj\Debug\App.g.cs
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion_MarkupCompile.cache
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.g.resources
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.Properties.Resources.resources
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.csproj.GenerateResource.Cache
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.exe
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\Administracion\obj\Debug\Administracion.pdb

@@ -1,13 +1,15 @@
 ﻿// Autor: Isidro Aguilar
 // Fecha: 01/12/2014
 // Descripción: Control de Cuenta de Cliente.
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using System.Threading.Tasks;
+using LibreriaModelo.Auxiliar;
+using LibreriaModelo.Modelo;
 
 namespace Cliente.Controllers
 {
@@ -20,25 +22,24 @@ namespace Cliente.Controllers
             return View();
         }
 
-        public async Task<ActionResult> Ingresar(Usuario usuario)
+        public async Task<ActionResult> Ingresar(Usuarios usuario)
         {
             try
             {
-                string expresion = string.Format("Usuario = \"{0}\" And Contrasena = \"{1}\"", usuario.Usuario, usuario.Contrasena);
+                string expresion = string.Format("Usuario = \"{0}\" And Contrasena = \"{1}\"", usuario.Nombre, usuario.Contrasena);
                 Parametro[] parametros = new Parametro[] { new Parametro("expresion", expresion) };
-                var resultado = await ServiceController.ConsumirServicio<List<Usuario>>("UsuarioEpcon", "ObtenerUsuarioEpcon", "GET", parametros);
-                usuarioEpcon = resultado.Where(u => u.Usuario == usuario.Usuario).Count() > 0 ? resultado.First() : null;
-                if (usuarioEpcon != null)
+                var resultado = await ServiceController.ConsumirServicio<List<Usuarios>>("Usuario", "ObtenerUsuario", "GET", parametros);
+                usuario = resultado.Where(u => u.Nombre == usuario.Apellidos).Count() > 0 ? resultado.First() : null;
+                if (usuario != null)
                 {
                     // Los datos de acceso son correctos, ingresa una entrada en el log.
                     Login logUsuario = new Login();
-                    logUsuario.IdUsuarioEpcon = usuario.IdUsuarioEpcon;
-                    logUsuario.Ip = "192.168.1.1";
+                    logUsuario.IdUsuario = usuario.IdUsuario;
                     logUsuario.FechaHora = DateTime.Now;
-                    ServiceController.ConsumirServicio<bool, LogEpcon>("Cuenta", "CrearLogin", "POST", login);
+                    ServiceController.ConsumirServicio<bool, Login>("LoginUsuario", "CrearLogUsuario", "POST", logUsuario);
                     // Autentica al usuario y lo almacena en sesión.
-                    FormsAuthentication.SetAuthCookie(usuarioEpcon.Usuario, false);
-                    Session["Usuario"] = usuarioEpcon;
+                    FormsAuthentication.SetAuthCookie(usuario.Nombre, false);
+                    Session["Usuario"] = usuario;
                     return Json(new { result = true, url = Url.Action("Index", "Home") });
                 }
                 else
