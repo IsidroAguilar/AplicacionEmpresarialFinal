@@ -21,8 +21,8 @@ namespace LibreriaModelo.Modelo
     
         public int IdPlatillo { get; set; }
         public int IdRestaurante { get; set; }
-        public int IdHabitacion { get; set; }
         public string NombrePlatillo { get; set; }
+        public string Tipo { get; set; }
         public string Descripcion { get; set; }
         public decimal Precio { get; set; }
         public int Estatus { get; set; }

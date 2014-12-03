@@ -39,10 +39,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Web.DynamicData" />
@@ -193,9 +200,9 @@
     <Content Include="Scripts\Shared\jquery-2.1.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HotelService\HotelService.csproj">
-      <Project>{3ae820f0-231f-4dea-b2b6-62d13c96340a}</Project>
-      <Name>HotelService</Name>
+    <ProjectReference Include="..\HotelServiceFinal\HotelServiceFinal.csproj">
+      <Project>{60759441-b057-4b11-a2c7-5660ceb57cbd}</Project>
+      <Name>HotelServiceFinal</Name>
     </ProjectReference>
     <ProjectReference Include="..\LibreriaModelo\LibreriaModelo.csproj">
       <Project>{468c5fac-d1b9-4263-aba5-34279f1bc59f}</Project>

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="HOTELModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="HotelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Habitacion">
           <Key>
             <PropertyRef Name="IdHabitacion" />
@@ -47,8 +47,8 @@
           </Key>
           <Property Name="IdPlatillo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="IdRestaurante" Type="int" Nullable="false" />
-          <Property Name="IdHabitacion" Type="int" Nullable="false" />
           <Property Name="NombrePlatillo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Tipo" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Precio" Type="numeric" Precision="18" Scale="2" Nullable="false" />
           <Property Name="Estatus" Type="int" Nullable="false" />
@@ -60,7 +60,8 @@
           <Property Name="IdRestaurante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Nombre" Type="nvarchar" MaxLength="300" Nullable="false" />
           <Property Name="Contrasena" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar(max)" />
+          <Property Name="Puesto" Type="int" Nullable="false" />
           <Property Name="Estatus" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Usuarios">
@@ -148,7 +149,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="HOTELModelStoreContainer">
+        <EntityContainer Name="HotelModelStoreContainer">
           <EntitySet Name="Habitacion" EntityType="Self.Habitacion" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="LoginAdm" EntityType="Self.LoginAdm" Schema="dbo" store:Type="Tables" />
@@ -185,7 +186,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="HOTELModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="HotelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Habitacion">
           <Key>
             <PropertyRef Name="IdHabitacion" />
@@ -234,8 +235,8 @@
           </Key>
           <Property Name="IdPlatillo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IdRestaurante" Type="Int32" Nullable="false" />
-          <Property Name="IdHabitacion" Type="Int32" Nullable="false" />
           <Property Name="NombrePlatillo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Tipo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Precio" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
           <Property Name="Estatus" Type="Int32" Nullable="false" />
@@ -249,7 +250,8 @@
           <Property Name="IdRestaurante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Contrasena" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Puesto" Type="Int32" Nullable="false" />
           <Property Name="Estatus" Type="Int32" Nullable="false" />
           <NavigationProperty Name="LoginAdm" Relationship="Self.FK_LoginAdm_Restaurantes" FromRole="Restaurantes" ToRole="LoginAdm" />
           <NavigationProperty Name="Platillos" Relationship="Self.FK_Platillos_Restaurantes" FromRole="Restaurantes" ToRole="Platillos" />
@@ -379,9 +381,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="HOTELModelStoreContainer" CdmEntityContainer="HotelEntities">
+        <EntityContainerMapping StorageEntityContainer="HotelModelStoreContainer" CdmEntityContainer="HotelEntities">
           <EntitySetMapping Name="Habitacion">
-            <EntityTypeMapping TypeName="HOTELModel.Habitacion">
+            <EntityTypeMapping TypeName="HotelModel.Habitacion">
               <MappingFragment StoreEntitySet="Habitacion">
                 <ScalarProperty Name="IdHabitacion" ColumnName="IdHabitacion" />
                 <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
@@ -392,7 +394,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Login">
-            <EntityTypeMapping TypeName="HOTELModel.Login">
+            <EntityTypeMapping TypeName="HotelModel.Login">
               <MappingFragment StoreEntitySet="Login">
                 <ScalarProperty Name="IdLogin" ColumnName="IdLogin" />
                 <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
@@ -401,7 +403,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="LoginAdm">
-            <EntityTypeMapping TypeName="HOTELModel.LoginAdm">
+            <EntityTypeMapping TypeName="HotelModel.LoginAdm">
               <MappingFragment StoreEntitySet="LoginAdm">
                 <ScalarProperty Name="IdLoginAdm" ColumnName="IdLoginAdm" />
                 <ScalarProperty Name="IdRestaurante" ColumnName="IdRestaurante" />
@@ -410,7 +412,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Pedidos">
-            <EntityTypeMapping TypeName="HOTELModel.Pedidos">
+            <EntityTypeMapping TypeName="HotelModel.Pedidos">
               <MappingFragment StoreEntitySet="Pedidos">
                 <ScalarProperty Name="IdPedido" ColumnName="IdPedido" />
                 <ScalarProperty Name="IdPlatillo" ColumnName="IdPlatillo" />
@@ -421,12 +423,12 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Platillos">
-            <EntityTypeMapping TypeName="HOTELModel.Platillos">
+            <EntityTypeMapping TypeName="HotelModel.Platillos">
               <MappingFragment StoreEntitySet="Platillos">
                 <ScalarProperty Name="IdPlatillo" ColumnName="IdPlatillo" />
                 <ScalarProperty Name="IdRestaurante" ColumnName="IdRestaurante" />
-                <ScalarProperty Name="IdHabitacion" ColumnName="IdHabitacion" />
                 <ScalarProperty Name="NombrePlatillo" ColumnName="NombrePlatillo" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
                 <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
                 <ScalarProperty Name="Precio" ColumnName="Precio" />
                 <ScalarProperty Name="Estatus" ColumnName="Estatus" />
@@ -434,18 +436,19 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Restaurantes">
-            <EntityTypeMapping TypeName="HOTELModel.Restaurantes">
+            <EntityTypeMapping TypeName="HotelModel.Restaurantes">
               <MappingFragment StoreEntitySet="Restaurantes">
                 <ScalarProperty Name="IdRestaurante" ColumnName="IdRestaurante" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
                 <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
                 <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Puesto" ColumnName="Puesto" />
                 <ScalarProperty Name="Estatus" ColumnName="Estatus" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Usuarios">
-            <EntityTypeMapping TypeName="HOTELModel.Usuarios">
+            <EntityTypeMapping TypeName="HotelModel.Usuarios">
               <MappingFragment StoreEntitySet="Usuarios">
                 <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
