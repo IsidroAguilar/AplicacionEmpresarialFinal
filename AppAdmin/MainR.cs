@@ -17,12 +17,14 @@ namespace AppAdmin
     {
         public List<Platillos> catalogo = new List<Platillos>();
         public List<Pedidos> pedidos = new List<Pedidos>();
+        Int16 user = 0;
 
-        public MainR()
+        public MainR(int usuario)
         {
             InitializeComponent();
             ObtenerRestaurantes();
             ObtenerPlatillos();
+            user = usuario;
         }
 
         private void btnEliminarPedido_Click(object sender, EventArgs e)
@@ -139,6 +141,25 @@ namespace AppAdmin
 
         private void cmbRestaurantR_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void dataGridPedidos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var cell = dataGridPedidos.CurrentRow.Cells["cEstado"].Value.ToString();
+        }
+
+        private void MainR_Load(object sender, EventArgs e)
+        {
+            if(user == 1)
+            {
+                btnEliminarPedido.Visible = true;
+            }
+            else
+            {
+                btnEliminarPedido.Visible = false;
+            }
+
 
         }
 

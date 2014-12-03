@@ -95,6 +95,24 @@ namespace HotelServiceFinal.Controllers
 
         }
 
+        public string SignAdmin(string user, string password)
+        {
+            try
+            {
+                var validUser = ValidateCredentials(user, password);
+                if (!validUser)
+                    return "";
+
+
+                var room = UserPrincipal.FindByIdentity(ctx, user);
+                return room.GivenName;
+            }
+            catch(Exception ex)
+            {
+                return "";
+            }
+        }
+
         public bool SignInTenant(int roomNumber, string adminPass, string tenantName, string tenantSurname, string tenantAccess,
              string tenantEmail, string tenantPassword)
         {

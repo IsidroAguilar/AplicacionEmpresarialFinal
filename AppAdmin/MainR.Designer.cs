@@ -53,7 +53,6 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbRestaurantR = new System.Windows.Forms.ComboBox();
-            this.tabPlatillos = new System.Windows.Forms.TabPage();
             this.tabOptions.SuspendLayout();
             this.tabPedidosAct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPedidos)).BeginInit();
@@ -68,7 +67,6 @@
             this.tabOptions.Controls.Add(this.tabPedidosAct);
             this.tabOptions.Controls.Add(this.tabHistorial);
             this.tabOptions.Controls.Add(this.tabRestaurants);
-            this.tabOptions.Controls.Add(this.tabPlatillos);
             this.tabOptions.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabOptions.Location = new System.Drawing.Point(-1, -1);
             this.tabOptions.Name = "tabOptions";
@@ -104,6 +102,7 @@
             this.btnEliminarPedido.TabIndex = 4;
             this.btnEliminarPedido.Text = "Eliminar Pedido";
             this.btnEliminarPedido.UseVisualStyleBackColor = false;
+            this.btnEliminarPedido.Visible = false;
             this.btnEliminarPedido.Click += new System.EventHandler(this.btnEliminarPedido_Click);
             // 
             // label1
@@ -142,6 +141,7 @@
             this.dataGridPedidos.Name = "dataGridPedidos";
             this.dataGridPedidos.Size = new System.Drawing.Size(731, 462);
             this.dataGridPedidos.TabIndex = 1;
+            this.dataGridPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridPedidos_CellContentClick);
             // 
             // cEstado
             // 
@@ -311,16 +311,6 @@
             this.cmbRestaurantR.TabIndex = 5;
             this.cmbRestaurantR.SelectedIndexChanged += new System.EventHandler(this.cmbRestaurantR_SelectedIndexChanged);
             // 
-            // tabPlatillos
-            // 
-            this.tabPlatillos.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPlatillos.Location = new System.Drawing.Point(4, 27);
-            this.tabPlatillos.Name = "tabPlatillos";
-            this.tabPlatillos.Size = new System.Drawing.Size(873, 528);
-            this.tabPlatillos.TabIndex = 3;
-            this.tabPlatillos.Text = "Platillos";
-            this.tabPlatillos.UseVisualStyleBackColor = true;
-            // 
             // MainR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,7 +321,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Restaurant";
+            this.Text = "1";
+            this.Load += new System.EventHandler(this.MainR_Load);
             this.tabOptions.ResumeLayout(false);
             this.tabPedidosAct.ResumeLayout(false);
             this.tabPedidosAct.PerformLayout();
@@ -352,7 +343,6 @@
         private System.Windows.Forms.TabPage tabPedidosAct;
         private System.Windows.Forms.TabPage tabHistorial;
         private System.Windows.Forms.TabPage tabRestaurants;
-        private System.Windows.Forms.TabPage tabPlatillos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbRestaurantsP;
         private System.Windows.Forms.DataGridView dataGridPedidos;
