@@ -15,10 +15,14 @@ namespace AppAdmin
 {
     public partial class MainR : Form
     {
+        public List<Platillos> catalogo = new List<Platillos>();
+        public List<Pedidos> pedidos = new List<Pedidos>();
+
         public MainR()
         {
             InitializeComponent();
             ObtenerRestaurantes();
+            ObtenerPlatillos();
         }
 
         private void btnEliminarPedido_Click(object sender, EventArgs e)
@@ -47,21 +51,23 @@ namespace AppAdmin
             {
                 //Pedidos Actuales
                 case "tabPedidosAct":
+                    LlenarPedidos();
                     dataGridPedidos.Refresh();
                     break;
 
                 //Historial
                 case "tabHistorial":
                     //Cargar Historial de la BD
+                    LlenarHistorial();
                     dataGridHistorial.Refresh();
                     break;
 
                 //Catalogo Platillos
                 case "tabRestaurants":
                     //Cargar Catalogo de platillos de la BD
-                    dataGridCatalogo.Refresh();
                     cmbRestaurantR.Refresh();
                     LlenarCatalogo();
+                    dataGridCatalogo.Refresh();
                     break;
 
                 //ABC Platillos
@@ -76,14 +82,59 @@ namespace AppAdmin
         void LlenarCatalogo()
         {
             dataGridCatalogo.Rows.Clear();
+            foreach (var item in catalogo)
+                dataGridCatalogo.Rows.Add(item.NombrePlatillo.ToString(),
+                    item.Restaurantes.Nombre.ToString(),
+                    item.Precio.ToString());
+        }
+
+        void LlenarPedidos()
+        {
+            dataGridPedidos.Rows.Clear();
+            PedidosController pedidosContr = new PedidosController();
+            pedidos = pedidosContr.ObtenerPedidos().ToList();
+            foreach (var item in pedidos.Where(x => x.Estatus == 1))
+                dataGridPedidos.Rows.Add(false, item.Platillos.NombrePlatillo.ToString(),
+                    item.Habitacion.NumeroHabitacion.ToString(), item.Platillos.Precio.ToString());
+
+        }
+
+        void LlenarHistorial()
+        {
+            dataGridHistorial.Rows.Clear();
+            var idDescription = "";
+            foreach (var item in pedidos)
+            {
+                switch (item.Estatus)
+                {
+                    case 1:
+                        idDescription = "Activo"; break;
+                    case 2:
+                        idDescription = "Entregado"; break;
+                    case 3:
+                        idDescription = "Cancelado"; break;
+
+                    default: break;
+                }
+
+                dataGridHistorial.Rows.Add(item.Platillos.NombrePlatillo.ToString(),
+                    item.Habitacion.NumeroHabitacion.ToString(), item.Platillos.Precio.ToString(),
+                    idDescription);
+            }
 
         }
 
         void ObtenerRestaurantes()
         {
             //Se obtienen los restaurantes y se llenan los combo
+            
         }
 
+        void ObtenerPlatillos()
+        {
+            PlatillosController platillos = new PlatillosController();
+            catalogo = platillos.ObtenerPlatillos().ToList();
+        }
 
     }
 }
