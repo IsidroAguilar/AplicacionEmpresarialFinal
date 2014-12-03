@@ -14,14 +14,33 @@ namespace HotelServiceFinal.Controllers
         //The context of Active Directory
         #region Context
 
-        PrincipalContext ctx = new PrincipalContext(
+        PrincipalContext ctxH = new PrincipalContext(
         ContextType.Domain,
         "bonafide.local",
-        "DC=bonafide,DC=local",
+        "DC=bonafide,DC=local,OU=Hotel,OU=Admins",
         ContextOptions.Negotiate,
         "emuñoz@bonafide.local",
         "Admin123456"
         );
+
+        PrincipalContext ctxR = new PrincipalContext(
+      ContextType.Domain,
+      "bonafide.local",
+      "DC=bonafide,DC=local,OU=Hotel,OU=Rooms",
+      ContextOptions.Negotiate,
+      "emuñoz@bonafide.local",
+      "Admin123456"
+      );
+
+        PrincipalContext ctx = new PrincipalContext(
+   ContextType.Domain,
+   "bonafide.local",
+   "DC=bonafide,DC=local,OU=Hotel,OU=Rooms",
+   ContextOptions.Negotiate,
+   "emuñoz@bonafide.local",
+   "Admin123456"
+   );
+
 
         #endregion
 
@@ -45,7 +64,7 @@ namespace HotelServiceFinal.Controllers
             try
             {
                 //Se verifica que no exista una habitacion registrada con el mismo numero de habitacion
-                var usuario = UserPrincipal.FindByIdentity(ctx, roomNumber.ToString());
+                var usuario = UserPrincipal.FindByIdentity(ctxR, roomNumber.ToString());
                 if (usuario != null) return false;
 
                 //Se arma la variable del usuario del Active Directory
@@ -83,7 +102,7 @@ namespace HotelServiceFinal.Controllers
                 if (!validUser)
                     return false;
 
-                var room = UserPrincipal.FindByIdentity(ctx, roomNumber.ToString());
+                var room = UserPrincipal.FindByIdentity(ctxR, roomNumber.ToString());
                 room.Description = roomStatus;
                 room.Save();
                 return true;
@@ -104,10 +123,10 @@ namespace HotelServiceFinal.Controllers
                     return "";
 
 
-                var room = UserPrincipal.FindByIdentity(ctx, user);
+                var room = UserPrincipal.FindByIdentity(ctxH, user);
                 return room.GivenName;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return "";
             }
@@ -122,7 +141,7 @@ namespace HotelServiceFinal.Controllers
                 if (!validUser)
                     return false;
 
-                var room = UserPrincipal.FindByIdentity(ctx, roomNumber.ToString());
+                var room = UserPrincipal.FindByIdentity(ctxR, roomNumber.ToString());
                 room.Description = "Occupy";
                 room.EmailAddress = tenantEmail;
                 room.Surname = tenantName + tenantSurname;
@@ -146,7 +165,7 @@ namespace HotelServiceFinal.Controllers
                 if (!validUser)
                     return false;
 
-                var room = UserPrincipal.FindByIdentity(ctx, roomNumber.ToString());
+                var room = UserPrincipal.FindByIdentity(ctxR, roomNumber.ToString());
                 room.Description = "Enabled";
                 room.EmailAddress = "Empty";
                 room.Surname = "Empty";
@@ -171,7 +190,7 @@ namespace HotelServiceFinal.Controllers
                 if (!validUser)
                     return false;
 
-                var room = UserPrincipal.FindByIdentity(ctx, roomNumber.ToString());
+                var room = UserPrincipal.FindByIdentity(ctxR, roomNumber.ToString());
                 room.Description = "Locked";
                 room.Enabled = false;
                 room.Save();
@@ -182,5 +201,5 @@ namespace HotelServiceFinal.Controllers
                 return false;
             }
         }
-	}
+    }
 }

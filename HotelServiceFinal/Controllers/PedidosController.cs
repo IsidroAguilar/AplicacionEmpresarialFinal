@@ -27,6 +27,23 @@ namespace HotelServiceFinal.Controllers
         }
 
         [HttpGet]
+        public bool PedidoRealizado(int room, int estatus)
+        {
+            try
+            {
+                var pedidoR = db.Pedidos.FirstOrDefault(x => x.Habitacion.NumeroHabitacion == room);
+                pedidoR.Estatus = estatus;
+                db.SaveChanges();
+                return true;
+
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        [HttpGet]
         public Pedidos ObtenerPlatilloId(int idPedido)
         {
             try
@@ -90,5 +107,5 @@ namespace HotelServiceFinal.Controllers
             db.Dispose();
             base.Dispose(disposing);
         }
-	}
+    }
 }

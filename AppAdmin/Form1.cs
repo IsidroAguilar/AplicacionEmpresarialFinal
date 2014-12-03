@@ -32,7 +32,10 @@ namespace AppAdmin
                 }
                 else
                 {
-                    MainR restaurant = new MainR();
+                    var nivel = 0;
+                    if (acceso == "RestaurantA")
+                        nivel = 1;
+                    MainR restaurant = new MainR(nivel);
                     restaurant.Show();
                     this.Hide();
                 }
