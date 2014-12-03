@@ -1,0 +1,10 @@
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\AdministracionForms\bin\Debug\AdministracionForms.exe.config
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\AdministracionForms\bin\Debug\AdministracionForms.exe
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\AdministracionForms\bin\Debug\AdministracionForms.pdb
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\AdministracionForms\obj\Debug\AdministracionForms.csprojResolveAssemblyReference.cache
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\AdministracionForms\obj\Debug\AdministracionForms.Properties.Resources.resources
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\AdministracionForms\obj\Debug\AdministracionForms.csproj.GenerateResource.Cache
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\AdministracionForms\obj\Debug\AdministracionForms.exe
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\AdministracionForms\obj\Debug\AdministracionForms.pdb
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\AdministracionForms\obj\Debug\AdministracionForms.Form1.resources
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\AdministracionForms\obj\Debug\AdministracionForms.Main.resources

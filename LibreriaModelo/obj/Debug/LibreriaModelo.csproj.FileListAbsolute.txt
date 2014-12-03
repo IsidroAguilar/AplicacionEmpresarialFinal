@@ -1,0 +1,10 @@
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\LibreriaModelo.dll.config
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\LibreriaModelo.dll
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\LibreriaModelo.pdb
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.dll
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.xml
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\obj\Debug\LibreriaModelo.csprojResolveAssemblyReference.cache
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\obj\Debug\LibreriaModelo.dll
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\obj\Debug\LibreriaModelo.pdb

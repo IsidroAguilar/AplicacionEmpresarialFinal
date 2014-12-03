@@ -1,0 +1,1 @@
+C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\HotelService.Tests\obj\Debug\HotelService.Tests.csprojResolveAssemblyReference.cache
