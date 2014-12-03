@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b4fcf8b2e9de4540aaca4848eedd6f2c" Name="Diagram1">
-        <EntityTypeShape EntityType="HOTELModel.Habitacion" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="HOTELModel.Login" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="HOTELModel.LoginAdm" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="HOTELModel.Pedidos" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="HOTELModel.Platillos" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="HOTELModel.Restaurantes" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="HOTELModel.Usuarios" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
-        <AssociationConnector Association="HOTELModel.FK_Habitacion_Usuarios" ManuallyRouted="false" />
-        <AssociationConnector Association="HOTELModel.FK_Pedidos_Habitacion" ManuallyRouted="false" />
-        <AssociationConnector Association="HOTELModel.FK_Login_Usuarios" ManuallyRouted="false" />
-        <AssociationConnector Association="HOTELModel.FK_LoginAdm_Restaurantes" ManuallyRouted="false" />
-        <AssociationConnector Association="HOTELModel.FK_Pedidos_Platillos" ManuallyRouted="false" />
-        <AssociationConnector Association="HOTELModel.FK_Platillos_Restaurantes" ManuallyRouted="false" />
+      <Diagram DiagramId="457d98bf7c9a4359a206b27e5c5a8f6f" Name="Diagram1">
+        <EntityTypeShape EntityType="HotelModel.Habitacion" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelModel.Login" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelModel.LoginAdm" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelModel.Pedidos" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelModel.Platillos" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelModel.Restaurantes" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="HotelModel.Usuarios" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="HotelModel.FK_Habitacion_Usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelModel.FK_Pedidos_Habitacion" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelModel.FK_Login_Usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelModel.FK_LoginAdm_Restaurantes" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelModel.FK_Pedidos_Platillos" ManuallyRouted="false" />
+        <AssociationConnector Association="HotelModel.FK_Platillos_Restaurantes" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

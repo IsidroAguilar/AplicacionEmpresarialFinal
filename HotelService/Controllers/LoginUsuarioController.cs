@@ -17,7 +17,7 @@ namespace HotelService.Controllers
         HotelEntities db = new HotelEntities();
 
         [HttpPost]
-        public bool CrearLogUsuario(Usuarios logUsuario)
+        public bool CrearLogUsuario(Login logUsuario)
         {
             try
             {

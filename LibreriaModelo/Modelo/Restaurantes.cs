@@ -24,6 +24,7 @@ namespace LibreriaModelo.Modelo
         public string Nombre { get; set; }
         public string Contrasena { get; set; }
         public string Descripcion { get; set; }
+        public int Puesto { get; set; }
         public int Estatus { get; set; }
     
         public virtual ICollection<LoginAdm> LoginAdm { get; set; }
