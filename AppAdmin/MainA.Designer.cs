@@ -30,28 +30,28 @@
         {
             this.tabRecepcion = new System.Windows.Forms.TabControl();
             this.tabEntrada = new System.Windows.Forms.TabPage();
-            this.tabSalida = new System.Windows.Forms.TabPage();
-            this.tabBloqueos = new System.Windows.Forms.TabPage();
-            this.tabHabita = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtApellidos = new System.Windows.Forms.TextBox();
-            this.txtAccess = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.cmbHabiDisponible = new System.Windows.Forms.ComboBox();
             this.btnIngresar = new System.Windows.Forms.Button();
+            this.cmbHabiDisponible = new System.Windows.Forms.ComboBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtAccess = new System.Windows.Forms.TextBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabSalida = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tabBloqueos = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.tabHabita = new System.Windows.Forms.TabPage();
             this.dataGridHabitaciones = new System.Windows.Forms.DataGridView();
             this.RoomNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoomStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -101,6 +101,112 @@
             this.tabEntrada.Text = "Entrada";
             this.tabEntrada.UseVisualStyleBackColor = true;
             // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Location = new System.Drawing.Point(191, 347);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(151, 47);
+            this.btnIngresar.TabIndex = 12;
+            this.btnIngresar.Text = "Ingresar Huésped";
+            this.btnIngresar.UseVisualStyleBackColor = true;
+            // 
+            // cmbHabiDisponible
+            // 
+            this.cmbHabiDisponible.FormattingEnabled = true;
+            this.cmbHabiDisponible.Location = new System.Drawing.Point(237, 95);
+            this.cmbHabiDisponible.Name = "cmbHabiDisponible";
+            this.cmbHabiDisponible.Size = new System.Drawing.Size(105, 26);
+            this.cmbHabiDisponible.TabIndex = 11;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(166, 279);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(176, 25);
+            this.txtPassword.TabIndex = 10;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(166, 243);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(176, 25);
+            this.txtEmail.TabIndex = 9;
+            // 
+            // txtAccess
+            // 
+            this.txtAccess.Location = new System.Drawing.Point(166, 205);
+            this.txtAccess.Name = "txtAccess";
+            this.txtAccess.Size = new System.Drawing.Size(176, 25);
+            this.txtAccess.TabIndex = 8;
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.Location = new System.Drawing.Point(166, 167);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(176, 25);
+            this.txtApellidos.TabIndex = 7;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(166, 131);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(176, 25);
+            this.txtNombre.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(63, 282);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 18);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Password";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(63, 246);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 18);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Email";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(63, 208);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 18);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Access Card";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(63, 170);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 18);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Apellidos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(63, 134);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 18);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Nombre";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(63, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Habitacion";
+            // 
             // tabSalida
             // 
             this.tabSalida.Controls.Add(this.button1);
@@ -114,133 +220,14 @@
             this.tabSalida.Text = "Salida";
             this.tabSalida.UseVisualStyleBackColor = true;
             // 
-            // tabBloqueos
+            // button1
             // 
-            this.tabBloqueos.Controls.Add(this.button2);
-            this.tabBloqueos.Controls.Add(this.comboBox2);
-            this.tabBloqueos.Controls.Add(this.label7);
-            this.tabBloqueos.Location = new System.Drawing.Point(4, 34);
-            this.tabBloqueos.Name = "tabBloqueos";
-            this.tabBloqueos.Size = new System.Drawing.Size(435, 501);
-            this.tabBloqueos.TabIndex = 2;
-            this.tabBloqueos.Text = "Bloqueos";
-            this.tabBloqueos.UseVisualStyleBackColor = true;
-            // 
-            // tabHabita
-            // 
-            this.tabHabita.Controls.Add(this.dataGridHabitaciones);
-            this.tabHabita.Location = new System.Drawing.Point(4, 34);
-            this.tabHabita.Name = "tabHabita";
-            this.tabHabita.Size = new System.Drawing.Size(435, 501);
-            this.tabHabita.TabIndex = 3;
-            this.tabHabita.Text = "Habitaciones";
-            this.tabHabita.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Habitacion";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 134);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(63, 170);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Apellidos";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(63, 208);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Access Card";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(63, 246);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 18);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Email";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(63, 282);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 18);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Password";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(166, 131);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(176, 25);
-            this.txtNombre.TabIndex = 6;
-            // 
-            // txtApellidos
-            // 
-            this.txtApellidos.Location = new System.Drawing.Point(166, 167);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(176, 25);
-            this.txtApellidos.TabIndex = 7;
-            // 
-            // txtAccess
-            // 
-            this.txtAccess.Location = new System.Drawing.Point(166, 205);
-            this.txtAccess.Name = "txtAccess";
-            this.txtAccess.Size = new System.Drawing.Size(176, 25);
-            this.txtAccess.TabIndex = 8;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(166, 243);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(176, 25);
-            this.txtEmail.TabIndex = 9;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(166, 279);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(176, 25);
-            this.txtPassword.TabIndex = 10;
-            // 
-            // cmbHabiDisponible
-            // 
-            this.cmbHabiDisponible.FormattingEnabled = true;
-            this.cmbHabiDisponible.Location = new System.Drawing.Point(237, 95);
-            this.cmbHabiDisponible.Name = "cmbHabiDisponible";
-            this.cmbHabiDisponible.Size = new System.Drawing.Size(105, 26);
-            this.cmbHabiDisponible.TabIndex = 11;
-            // 
-            // btnIngresar
-            // 
-            this.btnIngresar.Location = new System.Drawing.Point(191, 347);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(151, 47);
-            this.btnIngresar.TabIndex = 12;
-            this.btnIngresar.Text = "Ingresar Huésped";
-            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(123, 233);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 47);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Retirar de Huésped";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -259,14 +246,17 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Habitacion";
             // 
-            // button1
+            // tabBloqueos
             // 
-            this.button1.Location = new System.Drawing.Point(123, 233);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 47);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Retirar de Huésped";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tabBloqueos.Controls.Add(this.button2);
+            this.tabBloqueos.Controls.Add(this.comboBox2);
+            this.tabBloqueos.Controls.Add(this.label7);
+            this.tabBloqueos.Location = new System.Drawing.Point(4, 34);
+            this.tabBloqueos.Name = "tabBloqueos";
+            this.tabBloqueos.Size = new System.Drawing.Size(435, 501);
+            this.tabBloqueos.TabIndex = 2;
+            this.tabBloqueos.Text = "Bloqueos";
+            this.tabBloqueos.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -293,6 +283,16 @@
             this.label7.Size = new System.Drawing.Size(85, 22);
             this.label7.TabIndex = 17;
             this.label7.Text = "Habitacion";
+            // 
+            // tabHabita
+            // 
+            this.tabHabita.Controls.Add(this.dataGridHabitaciones);
+            this.tabHabita.Location = new System.Drawing.Point(4, 34);
+            this.tabHabita.Name = "tabHabita";
+            this.tabHabita.Size = new System.Drawing.Size(435, 501);
+            this.tabHabita.TabIndex = 3;
+            this.tabHabita.Text = "Habitaciones";
+            this.tabHabita.UseVisualStyleBackColor = true;
             // 
             // dataGridHabitaciones
             // 
@@ -326,6 +326,7 @@
             this.Name = "MainA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Caribe Resort Playa";
+            this.Load += new System.EventHandler(this.MainA_Load);
             this.tabRecepcion.ResumeLayout(false);
             this.tabEntrada.ResumeLayout(false);
             this.tabEntrada.PerformLayout();

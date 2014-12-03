@@ -118,6 +118,13 @@
             // cmbRestaurantsP
             // 
             this.cmbRestaurantsP.FormattingEnabled = true;
+            this.cmbRestaurantsP.Items.AddRange(new object[] {
+            "Alhambra",
+            "Caribe Café",
+            "Capri",
+            "El Arrecife",
+            "Le Gourmet",
+            "Pagoda"});
             this.cmbRestaurantsP.Location = new System.Drawing.Point(580, 17);
             this.cmbRestaurantsP.Name = "cmbRestaurantsP";
             this.cmbRestaurantsP.Size = new System.Drawing.Size(160, 30);
@@ -224,6 +231,13 @@
             // cmbRestaurantH
             // 
             this.cmbRestaurantH.FormattingEnabled = true;
+            this.cmbRestaurantH.Items.AddRange(new object[] {
+            "Alhambra",
+            "Caribe Café",
+            "Capri",
+            "El Arrecife",
+            "Le Gourmet",
+            "Pagoda"});
             this.cmbRestaurantH.Location = new System.Drawing.Point(647, 13);
             this.cmbRestaurantH.Name = "cmbRestaurantH";
             this.cmbRestaurantH.Size = new System.Drawing.Size(160, 30);
@@ -284,10 +298,18 @@
             // cmbRestaurantR
             // 
             this.cmbRestaurantR.FormattingEnabled = true;
+            this.cmbRestaurantR.Items.AddRange(new object[] {
+            "Alhambra",
+            "Caribe Café",
+            "Capri",
+            "El Arrecife",
+            "Le Gourmet",
+            "Pagoda"});
             this.cmbRestaurantR.Location = new System.Drawing.Point(575, 14);
             this.cmbRestaurantR.Name = "cmbRestaurantR";
             this.cmbRestaurantR.Size = new System.Drawing.Size(160, 30);
             this.cmbRestaurantR.TabIndex = 5;
+            this.cmbRestaurantR.SelectedIndexChanged += new System.EventHandler(this.cmbRestaurantR_SelectedIndexChanged);
             // 
             // tabPlatillos
             // 

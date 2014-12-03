@@ -16,5 +16,18 @@ namespace AppAdmin
         {
             InitializeComponent();
         }
+
+        private void MainA_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        void ObtenerHabitaciones()
+        {
+            //Obtener Habitaciones disponibles
+
+        }
+
+
     }
 }

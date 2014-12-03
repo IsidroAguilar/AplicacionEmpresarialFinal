@@ -128,12 +128,18 @@ namespace AppAdmin
         {
             //Se obtienen los restaurantes y se llenan los combo
             
+            
         }
-
+          
         void ObtenerPlatillos()
         {
-            PlatillosController platillos = new PlatillosController();
+            PlatillosController platillos = new PlatillosController();     
             catalogo = platillos.ObtenerPlatillos().ToList();
+        }
+
+        private void cmbRestaurantR_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
     }
