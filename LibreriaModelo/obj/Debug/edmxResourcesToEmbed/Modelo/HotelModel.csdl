@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="HOTELModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="HotelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Habitacion">
     <Key>
       <PropertyRef Name="IdHabitacion" />
@@ -48,8 +48,8 @@
     </Key>
     <Property Name="IdPlatillo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="IdRestaurante" Type="Int32" Nullable="false" />
-    <Property Name="IdHabitacion" Type="Int32" Nullable="false" />
     <Property Name="NombrePlatillo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tipo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Precio" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
     <Property Name="Estatus" Type="Int32" Nullable="false" />
@@ -63,7 +63,8 @@
     <Property Name="IdRestaurante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Contrasena" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Puesto" Type="Int32" Nullable="false" />
     <Property Name="Estatus" Type="Int32" Nullable="false" />
     <NavigationProperty Name="LoginAdm" Relationship="Self.FK_LoginAdm_Restaurantes" FromRole="Restaurantes" ToRole="LoginAdm" />
     <NavigationProperty Name="Platillos" Relationship="Self.FK_Platillos_Restaurantes" FromRole="Restaurantes" ToRole="Platillos" />

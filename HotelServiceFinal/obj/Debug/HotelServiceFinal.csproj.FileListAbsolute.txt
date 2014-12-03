@@ -36,3 +36,41 @@ C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\HotelServiceFina
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\HotelServiceFinal\bin\Antlr3.Runtime.pdb
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\HotelServiceFinal\obj\Debug\HotelServiceFinal.dll
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\HotelServiceFinal\obj\Debug\HotelServiceFinal.pdb
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\HotelServiceFinal.dll.config
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\HotelServiceFinal.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\HotelServiceFinal.pdb
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\Antlr3.Runtime.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\EntityFramework.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\EntityFramework.SqlServer.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\LibreriaModelo.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\Newtonsoft.Json.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Net.Http.Formatting.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Helpers.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Http.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Http.WebHost.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Mvc.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Optimization.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Razor.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.WebPages.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.WebPages.Razor.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\WebGrease.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\LibreriaModelo.pdb
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\EntityFramework.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\EntityFramework.SqlServer.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\Newtonsoft.Json.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Net.Http.Formatting.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Helpers.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Http.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Http.WebHost.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Mvc.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Optimization.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.Razor.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.WebPages.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\System.Web.WebPages.Razor.xml
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\bin\Antlr3.Runtime.pdb
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\obj\Debug\HotelServiceFinal.csprojResolveAssemblyReference.cache
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\obj\Debug\HotelServiceFinal.dll
+C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\HotelServiceFinal\obj\Debug\HotelServiceFinal.pdb

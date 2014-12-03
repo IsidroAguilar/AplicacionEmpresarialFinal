@@ -38,14 +38,14 @@ namespace Cliente.Controllers
                         case "GET":
                             response = await client.GetAsync((controller + "/" + action));
                             break;
-                        case "POST":
-                            response = await client.PostAsJsonAsync((controller + "/" + action), "");
-                            break;
+                        //case "POST":
+                        //    response = await client.PostAsJsonAsync((controller + "/" + action), "");
+                        //    break;
                     }
                     // Obtener respuesta.
                     if (response.IsSuccessStatusCode)
                     {
-                        datos = await response.Content.ReadAsAsync<T>();
+                        //datos = await response.Content.ReadAsAsync<T>();
                     }
                     else
                     {
@@ -87,14 +87,14 @@ namespace Cliente.Controllers
                             }
                             response = await client.GetAsync(uri);
                             break;
-                        case "POST":
-                            response = await client.PostAsJsonAsync((controller + "/" + action), "");
-                            break;
+                        //case "POST":
+                        //    response = await client.PostAsJsonAsync((controller + "/" + action), "");
+                        //    break;
                     }
                     // Obtener respuesta.
                     if (response.IsSuccessStatusCode)
                     {
-                        datos = await response.Content.ReadAsAsync<T>();
+                        //datos = await response.Content.ReadAsAsync<T>();
                     }
                 }
                 return datos;
@@ -127,19 +127,19 @@ namespace Cliente.Controllers
                             else
                                 response = await client.GetAsync((controller + "/" + action));
                             break;
-                        case "POST":
-                            response = await client.PostAsJsonAsync((controller + "/" + action), parametro);
-                            break;
+                        //case "POST":
+                        //    response = await client.PostAsJsonAsync((controller + "/" + action), parametro);
+                        //    break;
                     }
                     // Obtener respuesta.
                     if (response.IsSuccessStatusCode)
                     {
-                        datos = await response.Content.ReadAsAsync<T>();
+                        //datos = await response.Content.ReadAsAsync<T>();
                     }
                     else
                     {
-                        var error = client.PostAsJsonAsync((controller + "/" + action), parametro).Result.Content.ReadAsStringAsync();
-                        throw error.Exception;
+                        //var error = client.PostAsJsonAsync((controller + "/" + action), parametro).Result.Content.ReadAsStringAsync();
+                        //throw error.Exception;
                     }
                 }
                 return datos;
