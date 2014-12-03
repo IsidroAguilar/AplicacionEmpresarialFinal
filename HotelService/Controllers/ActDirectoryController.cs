@@ -40,6 +40,16 @@ namespace HotelService.Controllers
 
 
 
+
+
+
+
+
+
+
+
+
+
         public bool AddRoom(int roomNumber, string adminPass, string roomPhone, string roomStatus)
         {
             try
