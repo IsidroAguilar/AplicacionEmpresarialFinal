@@ -1,0 +1,72 @@
+﻿@using Kendo.Mvc.UI
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>Servicio a la Habitación</h1>
+</div>
+
+@(Html.Kendo().Grid<LibreriaModelo.Modelo.Platillos>()
+      .Name("grid")
+      .Columns(columns =>
+      {
+          columns.Bound(p => p.IdPlatillo);
+          columns.Bound(p => p.NombrePlatillo);
+          columns.Bound(p => p.Descripcion);
+          //columns.Bound(c => c.Email);
+          //columns.Bound(c => c.Expiracion).ClientTemplate("#= kendo.toString(Expiracion, 'dd/MM/yyyy hh:mm:ss')#").Filterable(filterable => filterable.Extra(true));
+          columns.Command(commands =>
+          {
+              commands.Custom("EditarUsuario").Text("Editar").Click("EditarConsultorio");
+              commands.Custom("EliminarUsuario").Text("Eliminar").Click("EliminarConsultorio");
+          }).Title("Acción").Width(200);
+      })
+      .DataSource(dataSource =>
+      {
+          dataSource.Ajax()
+              .Read("ObtenerPlatillos", "Platillos")
+              .Model(model => model.Id(p => p.IdPlatillo));
+      })
+      .ToolBar(toolbar => toolbar.Custom().Text("Nuevo").Url("#").HtmlAttributes(new { onclick = "NuevoConsultorio();" }))
+      .Pageable(pageable =>
+      {
+          pageable.Messages(messages =>
+          {
+              messages.Display("{0} - {1} de {2} elementos");
+              messages.Empty("No hay elementos");
+              messages.Page("Página");
+              messages.Of("De");
+              messages.ItemsPerPage("Elementos por página");
+          });
+      })
+      .Filterable(filterable =>
+      {
+          filterable.Extra(false);
+          filterable.Operators(operators =>
+          {
+              operators.ForString(forString =>
+              {
+                  forString.Clear();
+                  forString.Contains("Contiene");
+              });
+              operators.ForNumber(forNumber =>
+              {
+                  forNumber.Clear();
+                  forNumber.IsEqualTo("Es igual a");
+                  forNumber.IsGreaterThan("Es mayor a");
+                  forNumber.IsLessThan("Es menor a");
+              });
+              operators.ForDate(forDate =>
+              {
+                  forDate.Clear();
+                  forDate.IsEqualTo("Es igual a");
+                  forDate.IsGreaterThan("Es mayor a");
+                  forDate.IsLessThan("Es menor a");
+              });
+          });
+      }).Events(e => e.FilterMenuInit("filterMenuInit"))
+      .Sortable()
+      .ClientDetailTemplateId("client-template")
+      .Events(events => events.DetailExpand("DetailExpand"))
+)

@@ -1,0 +1,7 @@
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\AppAdmin\obj\Debug\AppAdmin.csprojResolveAssemblyReference.cache
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\AppAdmin\obj\Debug\AppAdmin.AskForm.resources
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\AppAdmin\obj\Debug\AppAdmin.Form1.resources
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\AppAdmin\obj\Debug\AppAdmin.MainA.resources
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\AppAdmin\obj\Debug\AppAdmin.MainR.resources
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\AppAdmin\obj\Debug\AppAdmin.Properties.Resources.resources
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\AppAdmin\obj\Debug\AppAdmin.csproj.GenerateResource.Cache

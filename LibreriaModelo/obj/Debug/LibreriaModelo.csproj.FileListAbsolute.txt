@@ -11,20 +11,10 @@ C:\Users\Javier\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\obj\Debug
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\LibreriaModelo.dll.config
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\LibreriaModelo.dll
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\LibreriaModelo.pdb
-C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.dll
-C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.xml
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\obj\Debug\LibreriaModelo.csprojResolveAssemblyReference.cache
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\obj\Debug\LibreriaModelo.dll
 C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\obj\Debug\LibreriaModelo.pdb
-C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\LibreriaModelo.dll.config
-C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\LibreriaModelo.dll
-C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\LibreriaModelo.pdb
-C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.dll
-C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.xml
-C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\LibreriaModelo\obj\Debug\LibreriaModelo.csprojResolveAssemblyReference.cache
-C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\LibreriaModelo\obj\Debug\LibreriaModelo.dll
-C:\Users\emuñoz\Desktop\AplicacionEmpresarialFinal\LibreriaModelo\obj\Debug\LibreriaModelo.pdb
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.dll
+C:\Users\Isidro Aguilar\Source\Repos\AplicacionEmpresarialFinal\LibreriaModelo\bin\Debug\EntityFramework.SqlServer.dll
